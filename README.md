@@ -50,19 +50,18 @@ NotifAI is an on-device SMS classification engine designed to bring clarity and 
 ```
 NotifAI-ML/
 │
-├── classical_models/         # Logistic Regression, Random Forest, XGBoost scripts
+├── classifiers/         # Logistic Regression, Random Forest, XGBoost scripts
 │   └── sms_classification_baseline.py
 │
-├── bert_models/              # Fine-tuned transformer scripts
-│   ├── train_mobilebert_sms.py
+├── mobile_bert/              # Fine-tuned transformer scripts
+│   ├── mobile_bert_training.py
 │   ├── README_mobilebert_sms.md
 │   └── mobilebert_sms_model/
 │
 ├── tokenizer_vocab.json      # Tokenizer vocab built from SMS dataset
-├── data/                     # Sample or real SMS data (not included in repo)
-│   └── input_sms_messages.csv
+├── sample_data_set/                     # Sample or real SMS data (not included in repo)
+│   └── sample_input_file.csv
 │
-├── logs/                     # Trainer logs & metrics (optional)
 └── README.md                 # Main documentation (you are here)
 ```
 
